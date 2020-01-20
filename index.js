@@ -22,4 +22,3 @@ window.reducer = function reducer(state, action) {
             return state;
     }
 };
-

@@ -1,19 +1,20 @@
 {
-  "name": "preset-react-app",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "build": "NODE_ENV=production webpack --mode=production",
-    "postbuild": "prettier --write dist/**.js"
-  },
-  "dependencies": {
-    "@babel/cli": "^7.8.3",
-    "@babel/core": "^7.8.3",
-    "babel-loader": "^8.0.6",
-    "babel-preset-react-app": "^9.1.0",
-    "prettier": "^1.19.1",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
-  }
+    "name": "babel-preset-react-app-transpile-bug",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "NODE_ENV=production webpack --mode=production",
+        "postbuild": "prettier --write dist/**.js",
+        "test": "node test.js"
+    },
+    "dependencies": {
+        "@babel/cli": "^7.8.3",
+        "@babel/core": "^7.8.3",
+        "babel-loader": "^8.0.6",
+        "babel-preset-react-app": "^9.1.0",
+        "prettier": "^1.19.1",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10"
+    }
 }
