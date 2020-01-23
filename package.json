@@ -4,9 +4,12 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "build": "NODE_ENV=production webpack --mode=production",
         "postbuild": "prettier --write dist/**.js",
-        "test": "node test.js"
+        "test": "node test.js",
+        "babel": "babel index.js --out-file dist/babel-output.js",
+        "terser": "terser dist/babel-output.js -o dist/terser-output.js -c toplevel,sequences=false",
+        "postbabel": "prettier --write dist/**.js",
+        "postterser": "prettier --write dist/**.js"
     },
     "dependencies": {
         "@babel/cli": "^7.8.3",
@@ -16,7 +19,6 @@
         "babel-loader": "^8.0.6",
         "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
         "prettier": "^1.19.1",
-        "webpack": "^4.41.5",
-        "webpack-cli": "^3.3.10"
+        "terser": "^4.6.3"
     }
 }

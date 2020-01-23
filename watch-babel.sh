@@ -1,0 +1,1 @@
+watch "tail -16 dist/babel-output.js | nl"

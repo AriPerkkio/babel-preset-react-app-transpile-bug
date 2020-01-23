@@ -1,1 +1,0 @@
-watch "tail -25 dist/main.js | nl"
