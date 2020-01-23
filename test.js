@@ -1,6 +1,6 @@
 window = {};
 const devReducer = require('./index') && window.reducer;
-const prodReducer = require('./dist/main') && window.reducer;
+const prodReducer = require('./dist/babel-output') && window.reducer;
 
 const state = {
     keys: [

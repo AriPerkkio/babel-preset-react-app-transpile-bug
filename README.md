@@ -1,3 +1,9 @@
+```sh
+$ yarn babel
+$ yarn terser
+$ node test
+```
+
 `case B:` is transpiling incorrectly.
 
 test.js
