@@ -4,17 +4,17 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "postbuild": "prettier --write dist/**.js",
+        "build": "yarn babel && yarn terser && yarn test",
+        "debug": "node --nolazy --inspect-brk=9229 myProgram.js",
         "test": "node test.js",
         "babel": "babel index.js --out-file dist/babel-output.js",
         "terser": "terser dist/babel-output.js -o dist/terser-output.js -c toplevel,sequences=false",
-        "postbabel": "prettier --write dist/**.js",
         "postterser": "prettier --write dist/**.js"
     },
     "dependencies": {
         "@babel/cli": "^7.8.3",
         "@babel/core": "^7.8.3",
-        "@babel/preset-env": "^7.8.3",
+        "@babel/plugin-transform-block-scoping": "^7.8.3",
         "@babel/runtime": "^7.8.3",
         "babel-loader": "^8.0.6",
         "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
