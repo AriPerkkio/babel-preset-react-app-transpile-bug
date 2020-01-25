@@ -3,15 +3,15 @@ const devReducer = require('./index') && window.reducer;
 const prodReducer = require('./dist/babel-output') && window.reducer;
 
 const state = {
-    keys: [
-        { id: 1, name: 'key-one' },
-        { id: 2, name: 'key-two' },
+    unicorns: [
+        { id: 1, name: 'unicorn-one' },
+        { id: 2, name: 'unicorn-two' },
     ],
 };
 
 const action = {
     type: 'B',
-    key: { id: 2, name: 'renamed-key-two' },
+    unicorn: { id: 2, name: 'renamed-unicorn-two' },
 };
 
 console.log(
@@ -28,26 +28,26 @@ console.log(
 /*
 {
     "DEV": {
-        "keys": [
+        "unicorns": [
             {
                 "id": 1,
-                "name": "key-one"
+                "name": "unicorn-one"
             },
             {
                 "id": 2,
-                "name": "renamed-key-two"
+                "name": "renamed-unicorn-two"
             }
         ]
     },
     "PROD": {
-        "keys": [
+        "unicorns": [
             {
                 "id": 1,
-                "name": "key-one"
+                "name": "unicorn-one"
             },
             {
                 "id": 2,
-                "name": "key-two"
+                "name": "unicorn-two"
             }
         ]
     }

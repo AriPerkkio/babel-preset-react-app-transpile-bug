@@ -8,6 +8,7 @@
         "debug": "node --nolazy --inspect-brk=9229 myProgram.js",
         "test": "node test.js",
         "babel": "babel index.js --out-file dist/babel-output.js",
+        "rebabel": "babel dist/babel-output.js --out-file dist/rebabel-output.js",
         "terser": "terser dist/babel-output.js -o dist/terser-output.js -c toplevel,sequences=false",
         "postterser": "prettier --write dist/**.js"
     },

@@ -1,21 +1,21 @@
 window.reducer = function reducer(state, action) {
     switch (action.type) {
         case 'A': {
-            const { key } = action;
-            const keys = state.keys.map(_key =>
-                _key.id === key.id ? key : _key
+            const { unicorn } = action;
+            const unicorns = state.unicorns.map(_unicorn =>
+                _unicorn.name === unicorn.name ? unicorn : _unicorn
             );
 
-            return { ...state, keys };
+            return { ...state, unicorns, someCaseAAttributes: true };
         }
 
         case 'B': {
-            const { key } = action;
-            const keys = state.keys.map(_key =>
-                _key.id === key.id ? key : _key
+            const { unicorn } = action;
+            const unicorns = state.unicorns.map(_unicorn =>
+                _unicorn.id === unicorn.id ? unicorn : _unicorn
             );
 
-            return { ...state, keys };
+            return { ...state, unicorns, someCaseBAttributes: true };
         }
 
         default:
