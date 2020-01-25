@@ -1,5 +1,4 @@
 window = {};
-const devReducer = require('./index') && window.reducer;
 const prodReducer = require('./dist/babel-output') && window.reducer;
 
 const state = {
@@ -17,7 +16,6 @@ const action = {
 console.log(
     JSON.stringify(
         {
-            DEV: devReducer(state, action),
             PROD: prodReducer(state, action),
         },
         null,

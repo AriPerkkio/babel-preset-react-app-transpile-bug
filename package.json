@@ -18,7 +18,7 @@
         "@babel/plugin-transform-block-scoping": "^7.8.3",
         "@babel/runtime": "^7.8.3",
         "babel-loader": "^8.0.6",
-        "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+        "babel-plugin-remove-debug": "^0.0.4",
         "prettier": "^1.19.1",
         "terser": "^4.6.3"
     }

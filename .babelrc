@@ -1,9 +1,6 @@
 {
     "plugins": [
         "@babel/plugin-transform-block-scoping",
-        [
-            "babel-plugin-transform-react-remove-prop-types",
-            { "removeImport": true }
-        ]
+        "babel-plugin-remove-debug"
     ]
 }

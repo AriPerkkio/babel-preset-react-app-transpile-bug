@@ -215,10 +215,10 @@ babel-loader@^8.0.6:
     mkdirp "^0.5.1"
     pify "^4.0.1"
 
-babel-plugin-transform-react-remove-prop-types@^0.4.24:
-  version "0.4.24"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
-  integrity sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA==
+babel-plugin-remove-debug@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-debug/-/babel-plugin-remove-debug-0.0.4.tgz#d383c0a335fce19e4c33bd60dc35facf66399d1c"
+  integrity sha512-jM235LoQfbwCDgdlAuPzIpJxp2F3tPyNCjHCmNqpJ56sbPV5THsNdKDt2y3qLLiON4DTCqui1oxFcGbAxHaIJA==
 
 balanced-match@^1.0.0:
   version "1.0.0"
