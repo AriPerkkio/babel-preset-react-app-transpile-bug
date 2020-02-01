@@ -1,0 +1,9 @@
+{
+    "ignoreRoot": [".git"],
+    "watch": "node_modules",
+    "exec": "yarn babel",
+    "quiet": true,
+    "events": {
+        "start": "node -e console.clear\\(\\)"
+    }
+}

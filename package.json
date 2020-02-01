@@ -10,7 +10,9 @@
         "babel": "babel index.js --out-file dist/babel-output.js",
         "rebabel": "babel dist/babel-output.js --out-file dist/rebabel-output.js",
         "terser": "terser dist/babel-output.js -o dist/terser-output.js -c toplevel,sequences=false",
-        "postterser": "prettier --write dist/**.js"
+        "postterser": "prettier --write dist/**.js",
+        "watch": "nodemon",
+        "watch:crawl": "CRAWL=true nodemon"
     },
     "dependencies": {
         "@babel/cli": "^7.8.3",
@@ -18,5 +20,8 @@
         "@babel/plugin-transform-block-scoping": "^7.8.3",
         "prettier": "^1.19.1",
         "terser": "^4.6.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
     }
 }

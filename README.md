@@ -4,6 +4,11 @@ $ yarn terser
 $ node test
 ```
 
+```sh
+$ yarn watch # 1st terminal
+$ yarn watch:crawl # 2nd terminal
+```
+
 `case B:` is transpiling incorrectly.
 
 test.js
